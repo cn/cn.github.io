@@ -34,8 +34,8 @@ a {
 /* layout */
 .header {
   position: relative;
+  height: 360px;
   background: #444e61;
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,4 +70,14 @@ a {
   bottom: 1em;
   width: 100%;
   text-align: center;
+}
+.header-content h1, .header-content a {
+  color: white;
+}
+
+.header-home {
+  height: 500px;
+}
+.content {
+  padding: 48px 0;
 }

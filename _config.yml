@@ -6,7 +6,7 @@ permalink: /:year-:month-:day.html
 
 nav:
   - title: 关于
-    link: "#"
+    link: "/about/"
   - title: 项目
     link: "#"
   - title: 博客
