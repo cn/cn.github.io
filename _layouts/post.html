@@ -1,17 +1,23 @@
----
-layout: default
----
-
-<header class="header" role="banner">
-  {% include header.html %}
-  <div class="header-content">
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>{{ page.title }} — {{ site.name }}</title>
+  {% include head.html %}
+</head>
+<body>
+  <header class="header" role="banner"{% if page.cover %} style="background-image:url({{ page.cover }})"{% endif %}>
+    {% include header.html %}
+    <div class="header-content">
+      <div class="container yue">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+  </header>
+  <div class="content" role="main">
     <div class="container yue">
-      <h1>{{ page.title }}</h1>
+      {{ content }}
     </div>
   </div>
-</header>
-<div class="content" role="main">
-  <div class="container yue">
-    {{ content }}
-  </div>
-</div>
+  {% include footer.html %}
+</body>
+</html>
