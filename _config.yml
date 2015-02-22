@@ -4,6 +4,9 @@ markdown: kramdown
 highlight: null
 permalink: /:year-:month-:day.html
 
+exclude:
+  - README.md
+
 nav:
   - title: 关于
     link: "/about/"
